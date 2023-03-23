@@ -1,4 +1,4 @@
-INSERT INTO service_center.part (id, number, name, model, profession, birthday, level, banned)
+INSERT INTO service_center.part (id, number, name, model)
 VALUES (1, 'Ниус', 'Приходящий Без Шума', 6, 1, '2009-06-09 00:44:40.000000', 33, '\0'),
        (2, 'Никрашш', 'НайтВульф', 4, 0, '2006-07-09 08:50:40.000000', 58, '\0'),
        (3, 'Эззэссэль', 'шипящая', 1, 3, '2009-05-25 00:43:20.000000', 3, 1);
@@ -6,9 +6,9 @@ INSERT INTO service_center.model (id, number, name, model, profession, birthday,
 VALUES (1, 'Ниус', 'Приходящий Без Шума', 6, 1, '2009-06-09 00:44:40.000000', 33, '\0'),
        (2, 'Никрашш', 'НайтВульф', 4, 0, '2006-07-09 08:50:40.000000', 58, '\0'),
        (3, 'Эззэссэль', 'шипящая', 1, 3, '2009-05-25 00:43:20.000000', 3, 1);
-INSERT INTO service_center.brand (id, number, name, model, profession, birthday, level, banned)
-VALUES (1, 'Ниус', 'Приходящий Без Шума', 6, 1, '2009-06-09 00:44:40.000000', 33, '\0'),
-       (2, 'Никрашш', 'НайтВульф', 4, 0, '2006-07-09 08:50:40.000000', 58, '\0'),
+INSERT INTO service_center.brand (id, counrty, name)
+VALUES (1, 'Германия', 'Metabo'),
+       (2, 'США', 'DeWalt'),
        (3, 'Эззэссэль', 'шипящая', 1, 3, '2009-05-25 00:43:20.000000', 3, 1);
 INSERT INTO service_center.category (id, name)
 VALUES (1, 'Электроинструмент'),

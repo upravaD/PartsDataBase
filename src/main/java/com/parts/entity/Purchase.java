@@ -19,16 +19,19 @@ import java.util.List;
 @NoArgsConstructor
 public class Purchase {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
     @JoinColumn(name = "client_id")
     private Client client;
-    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "purchase")
-    @JoinTable(name="purchase_part",
-            joinColumns=  @JoinColumn(name="purchase_id", referencedColumnName="id"),
-            inverseJoinColumns= @JoinColumn(name="part_id", referencedColumnName="id") )
-    private List<Part> parts;
+//    @ManyToMany
+//    @JoinTable(name="purchase_part",
+//            joinColumns=  @JoinColumn(name="purchase_id", referencedColumnName="id"),
+//            inverseJoinColumns= @JoinColumn(name="part_id", referencedColumnName="id") )
+//    private List<Part> parts;
+    @ManyToOne
+    @JoinColumn(name = "part_id")
+    private Part part;
     private Integer count;
     private BigDecimal price;
     @CreationTimestamp

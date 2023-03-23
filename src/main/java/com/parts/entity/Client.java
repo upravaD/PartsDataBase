@@ -1,10 +1,7 @@
 package com.parts.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -16,12 +13,11 @@ import java.util.List;
 @NoArgsConstructor
 public class Client {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "first_name")
     private String firstName;
     private String surname;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "client")
-    @JoinColumn(name = "purchase_id")
+    @OneToMany(mappedBy = "client")
     private List<Purchase> purchases;
 }

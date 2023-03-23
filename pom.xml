@@ -90,36 +90,36 @@
       <version>6.0.0.Alpha7</version>
     </dependency>
     <!-- optional -->
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-osgi</artifactId>
-      <version>6.0.0.Alpha7</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-envers</artifactId>
-      <version>6.2.0.CR2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-c3p0</artifactId>
-      <version>6.2.0.CR2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-proxool</artifactId>
-      <version>6.2.0.CR2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-infinispan</artifactId>
-      <version>5.6.15.Final</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-ehcache</artifactId>
-      <version>6.0.0.Alpha7</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.hibernate</groupId>-->
+<!--      <artifactId>hibernate-osgi</artifactId>-->
+<!--      <version>6.0.0.Alpha7</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.hibernate</groupId>-->
+<!--      <artifactId>hibernate-envers</artifactId>-->
+<!--      <version>6.2.0.CR2</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.hibernate</groupId>-->
+<!--      <artifactId>hibernate-c3p0</artifactId>-->
+<!--      <version>6.2.0.CR2</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.hibernate</groupId>-->
+<!--      <artifactId>hibernate-proxool</artifactId>-->
+<!--      <version>6.2.0.CR2</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.hibernate</groupId>-->
+<!--      <artifactId>hibernate-infinispan</artifactId>-->
+<!--      <version>5.6.15.Final</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.hibernate</groupId>-->
+<!--      <artifactId>hibernate-ehcache</artifactId>-->
+<!--      <version>6.0.0.Alpha7</version>-->
+<!--    </dependency>-->
     <!--END Hibernate -->
 
     <!-- MySQL -->
