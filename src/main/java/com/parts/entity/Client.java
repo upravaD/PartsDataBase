@@ -20,4 +20,13 @@ public class Client {
     private String surname;
     @OneToMany(mappedBy = "client")
     private List<Purchase> purchases;
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
 }

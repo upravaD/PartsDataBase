@@ -1,10 +1,7 @@
 package com.parts.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.math.BigDecimal;
@@ -15,6 +12,7 @@ import java.util.List;
 @Table(name = "purchase", schema = "service_center")
 @Getter
 @Setter
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 public class Purchase {
@@ -24,14 +22,11 @@ public class Purchase {
     @ManyToOne
     @JoinColumn(name = "client_id")
     private Client client;
-//    @ManyToMany
-//    @JoinTable(name="purchase_part",
-//            joinColumns=  @JoinColumn(name="purchase_id", referencedColumnName="id"),
-//            inverseJoinColumns= @JoinColumn(name="part_id", referencedColumnName="id") )
-//    private List<Part> parts;
-    @ManyToOne
-    @JoinColumn(name = "part_id")
-    private Part part;
+    @ManyToMany
+    @JoinTable(name="purchase_part",
+            joinColumns=  @JoinColumn(name="purchase_id", referencedColumnName="id"),
+            inverseJoinColumns= @JoinColumn(name="part_id", referencedColumnName="id") )
+    private List<Part> parts;
     private Integer count;
     private BigDecimal price;
     @CreationTimestamp
